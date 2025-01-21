@@ -20,34 +20,34 @@
 
     gsap.registerPlugin(ScrollTrigger);
     
-    gsap.to(".video-section", {
-        yPercent: -90, 
-        ease: "none",
-        scrollTrigger: {
-        trigger: ".orange-bg",
-        start: "bottom top",
-        end: () => window.innerWidth < 768 ? "+=40%" : "+=80%",
-        pinSpacing:false,
-        // scrub: true,
-        scrub: 0.5, // Add a slight delay to the scrub for smoothness
-        invalidateOnRefresh: true, // Recalculate on resize
-        fastScrollEnd: true, 
-        // pin: true,
-        //  markers:true
-    }});
+    // gsap.to(".video-section", {
+    //     yPercent: -90, 
+    //     ease: "none",
+    //     scrollTrigger: {
+    //     trigger: ".orange-bg",
+    //     start: "bottom top",
+    //     end: () => window.innerWidth < 768 ? "+=40%" : "+=80%",
+    //     pinSpacing:false,
+    //     // scrub: true,
+    //     scrub: 0.5, // Add a slight delay to the scrub for smoothness
+    //     invalidateOnRefresh: true, // Recalculate on resize
+    //     fastScrollEnd: true, 
+    //     // pin: true,
+    //     //  markers:true
+    // }});
     
-    gsap.to(".sticky-section", {
-        yPercent:-100,
-        scrollTrigger: {
-        trigger: ".sticky-section",
-        start: "top bottom", // Start when the top of the section hits the bottom of the viewport
-        end: "", // End when the bottom of the section hits the bottom of the viewport
-        pin: true, // Stick the section
-        scrub: true, // Smooth scrolling
-        pinSpacing:true,
-        // markers:true
-    }
-    });
+    // gsap.to(".sticky-section", {
+    //     yPercent:-100,
+    //     scrollTrigger: {
+    //     trigger: ".sticky-section",
+    //     start: "top bottom", // Start when the top of the section hits the bottom of the viewport
+    //     end: "", // End when the bottom of the section hits the bottom of the viewport
+    //     pin: true, // Stick the section
+    //     scrub: true, // Smooth scrolling
+    //     pinSpacing:true,
+    //     // markers:true
+    // }
+    // });
 
     new FlipDown(1742515485).start();
 
@@ -58,12 +58,12 @@
       var isSmall = window.innerWidth < 1000;
     
       var ps = new ParticleSlider({
-        ptlGap: isMobile || isSmall ? 4 : 5,
-        ptlSize: 4,
+        ptlGap: isMobile || isSmall ? 3 : 0,
+        ptlSize: isMobile || isSmall ? 2 : 1,
         width: 1e9,
         height: 1e9,
-        color: '#000000', // Set the default color of particles to black
-        monochrome: true, // Enable monochrome mode
+        // color: '#000000', // Set the default color of particles to black
+        // monochrome: true, // Enable monochrome mode
         // ptlSize:5,
       });
     
