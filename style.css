@@ -411,7 +411,7 @@ body{
   flex-direction: column; 
   justify-content: center;
   align-items: center; 
-  font-family: Arial, sans-serif; 
+
   margin: 20px auto; 
   p{
     color: white;
@@ -616,12 +616,18 @@ body{
 
 .map-iframe{
   width: 80%;
+  /* height: 500px; */
+}
+.footer-logo{
+  width: 100px;
+  height: 100px;
 }
 
 /* Responsive */
 @media only screen and (max-width: 700px) {
   .footer-logo{
     width: 40px;
+    height: 40px;
   }
   .map-iframe{
     width: 100%;
@@ -650,16 +656,10 @@ body{
   }
 
 
-
   .orange-bg{
     padding-bottom: 20vh;
   }
   
-
-
-
-
-
   .img{
     position: relative;
     bottom: 100px;
@@ -847,7 +847,7 @@ body{
 }
 
 .footer {
-  padding: 20px;
+  padding: 0 20px 0 20px;
 }
 
 
@@ -902,7 +902,7 @@ body{
 
 @media (max-width: 480px) {
   .funnel h1, .funnel p {
-      text-align: center;
+      /* text-align: center; */
   }
 
   .cssbuttons-io-button {
