@@ -119,11 +119,11 @@ section {
 }
 
 h1 {
-  font-family: 'Abril Fatface', serif;
+  /* font-family: 'Abril Fatface', serif; */
   margin: 0;
   line-height: 1em;
   font-weight: 100;
-  color: #ffffff;
+  /* color: #ffffff; */
   font-size: 3.5em;
   span {
     font-style: italic;
@@ -239,7 +239,7 @@ body{
   }
 
  #particle-slider {
-  background-color: black;
+  /* background-color: black; */
   height: 100vh;
   width: 100vw;
   
@@ -356,7 +356,7 @@ body{
   width:90vw;
   margin-left: 5vw;
   margin-right: 5vw;
-  
+  z-index: -2;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -496,8 +496,10 @@ body{
 
   .boot-container {
     width: 80%;
+    gap: 4rem;
     margin-right: auto;
     margin-left: auto;
+    align-items: start;
   }
 .custom-cursor {
     position: absolute;
@@ -606,13 +608,25 @@ body{
   background-repeat: no-repeat;
 }
 
+.map-iframe{
+  width: 80%;
+}
 
+/* Responsive */
 @media only screen and (max-width: 700px) {
+  .footer-logo{
+    width: 40px;
+  }
+  .map-iframe{
+    width: 100%;
+  }
   .outskirts{
     display: none !important;
   }
 
-
+  .last-scrolling-section{
+    margin-bottom: 40vh;
+  }
   .box{
     width: 320px;
   }
@@ -745,7 +759,7 @@ body{
   .custom-cursor {
     display: none;}
   
-  
+ 
 
 }
 
@@ -830,12 +844,6 @@ body{
   padding: 20px;
 }
 
-.boot-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  align-items: center;
-}
 
 .logo-container .logo {
   max-width: 150px;
@@ -876,11 +884,14 @@ body{
 @media (max-width: 768px) {
   .boot-container {
       flex-direction: column;
+      gap: 2px;
   }
 
   .map iframe {
       height: 250px;
   }
+
+  
 }
 
 @media (max-width: 480px) {
@@ -892,4 +903,61 @@ body{
       width: 100%;
       text-align: center;
   }
+}
+
+
+/* From Uiverse.io by adamgiebl */ 
+.cssbuttons-io-button {
+
+  width: 100%;
+  background: #3b3a3e;
+  color: white;
+  padding: 2em;
+  padding-left: 1.2em;
+  font-size: clamp(15px, 2vw, 25px);
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em #3b3a3e;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.4em;
+  width: 3.4em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em #3b3a3e;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: #1c1822;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em) rotate(-40deg);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.98);
 }
