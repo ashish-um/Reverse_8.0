@@ -13,7 +13,9 @@
 
 a {
   text-decoration: none;
-  color: #92BFB1;
+  /* color: #92BFB1; */
+  color: white;
+  transition: all 200ms;
   &:hover {
     background: #92BFB1;
     color: #333333;
@@ -55,11 +57,12 @@ a {
 
 .nav--open {
   height: fit-content;
-  width: 50vw;
-  background: black;
+  width: 200px;
+  background: rgb(37, 37, 37);
   transition: all .4s ease-out;
   opacity: 1;
   box-shadow: 2px 2px 15px rgba(#333333, .1);
+  border-radius: 0px 12px 12px 0;
 }
 
 .nav--open-icon {
@@ -75,7 +78,7 @@ a {
 }
 
 .nav--open-title {
-  font-family: 'Oswald', sans-serif;
+  /* font-family: 'Oswald', sans-serif; */
   font-size: .8em;
   text-transform: uppercase;
   letter-spacing: .2em;
@@ -90,13 +93,13 @@ a {
   a {
     font-size: 2em;
     font-weight: 100;
-    font-family:'Schoolbell';
+    /* font-family:'Schoolbell'; */
     padding: 5px 0;
   }
 }
 
 .close {
-  transform: translateX(-300px);
+  transform: translateX(-400px);
   transition: all .4s ease-out;
   opacity: 0;
 }
@@ -410,6 +413,9 @@ body{
   align-items: center; 
   font-family: Arial, sans-serif; 
   margin: 20px auto; 
+  p{
+    color: white;
+  }
 }
 
 .clouds{
@@ -914,7 +920,7 @@ body{
   color: white;
   padding: 2em;
   padding-left: 1.2em;
-  font-size: clamp(15px, 2vw, 25px);
+  font-size: clamp(15px, 2vw, 22px);
   font-weight: 500;
   border-radius: 0.9em;
   border: none;

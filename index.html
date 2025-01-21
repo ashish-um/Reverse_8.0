@@ -8,7 +8,7 @@
     <link rel="icon" href="./assets/logo.png" type="image/png">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-
+    <link rel="stylesheet" href="./assets/flipdown.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Galindo&display=swap" rel="stylesheet">
@@ -32,15 +32,13 @@
                             </svg></div>
                       </div>
                       <div class="nav--open close sticky">
-                        <div class="nav--open-icon"><i class="fas fa-times"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="M12,2C6.47,2,2,6.47,2,12c0,5.53,4.47,10,10,10s10-4.47,10-10C22,6.47,17.53,2,12,2z M16.707,15.293 c0.391,0.391,0.391,1.023,0,1.414C16.512,16.902,16.256,17,16,17s-0.512-0.098-0.707-0.293L12,13.414l-3.293,3.293 C8.512,16.902,8.256,17,8,17s-0.512-0.098-0.707-0.293c-0.391-0.391-0.391-1.023,0-1.414L10.586,12L7.293,8.707 c-0.391-0.391-0.391-1.023,0-1.414s1.023-0.391,1.414,0L12,10.586l3.293-3.293c0.391-0.391,1.023-0.391,1.414,0 s0.391,1.023,0,1.414L13.414,12L16.707,15.293z"></path>
-                        </svg></i></div>
-                        <div class="nav--open-menu">
-                          <a href="">about</a>
-                          <a href="">work</a>
-                          <a href="">services</a>
-                          <a href="">blog</a>
-                          <a href="">contact</a>
+                        <div class="nav--open-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m480-424 116 116q11 11 28 11t28-11q11-11 11-28t-11-28L536-480l116-116q11-11 11-28t-11-28q-11-11-28-11t-28 11L480-536 364-652q-11-11-28-11t-28 11q-11 11-11 28t11 28l116 116-116 116q-11 11-11 28t11 28q11 11 28 11t28-11l116-116Zm0 344q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></div>
+                        <div class="nav--open-menu funnel">
+                          <a href="#about">about</a>
+                          <a href="#prizes">prizes?</a>
+                          <a href="#about">services</a>
+                          <!-- <a href="">blog</a> -->
+                          <a href="#footer">contact</a>
                         </div>
                       </div>
                       <div style="display: flex; flex-direction: column;">
@@ -59,9 +57,29 @@
                     </div>
                     
                 </div>
-                
+                <h1 style="font-size: clamp(2rem, 5vw, 4rem);" class="funnel">Time is Running!!</h1>
+                <div id="flipdown" class="flipdown" style="margin-bottom: 20px;"></div>
+                <div>
+
+                    <button class="cssbuttons-io-button rubik">
+                        Download Brochoure
+                    <div class="icon">
+                        <svg
+                        height="24"
+                        width="24"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path
+                            d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                            fill="currentColor"
+                        ></path>
+                        </svg>
+                    </div>
+                    </button>
+                </div>
             </div>
-            
         </div>
         <div class="torn-paper"></div>
     </div>
@@ -107,7 +125,7 @@ ReVerse has witnessed several awe-inspiring, mountain-moving, spine-chilling, ha
         
 
     </div>
-    <div class="section" style="background: rgb(0, 0, 0);" id="about">
+    <div class="section" style="background: rgb(0, 0, 0);" id="prizes">
         <div class="container" style="background: rgb(0, 0, 0);">
             <div class="funnel outskirts"></div>
 
@@ -181,7 +199,7 @@ ReVerse has witnessed several awe-inspiring, mountain-moving, spine-chilling, ha
 
 
     <div class="torn-paper" style="transform: scale(-1);"></div>
-    <div class="footer" style="background: white;">
+    <div class="footer" style="background: white;" id="footer">
         <!-- <center>
             <h1 class="funnel">Thank you for your curiosity</h1>
         </center> -->
@@ -240,7 +258,7 @@ ReVerse has witnessed several awe-inspiring, mountain-moving, spine-chilling, ha
 
 
 
-
+    <script src="./assets/flipdown.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>

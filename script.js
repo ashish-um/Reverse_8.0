@@ -30,10 +30,10 @@
         pinSpacing:false,
         // scrub: true,
         scrub: 0.5, // Add a slight delay to the scrub for smoothness
-    invalidateOnRefresh: true, // Recalculate on resize
-    fastScrollEnd: true, 
+        invalidateOnRefresh: true, // Recalculate on resize
+        fastScrollEnd: true, 
         // pin: true,
-         markers:true
+        //  markers:true
     }});
     
     gsap.to(".sticky-section", {
@@ -48,6 +48,9 @@
         // markers:true
     }
     });
+
+    new FlipDown(1742515485).start();
+
 
     var init = function() {
       var isMobile = navigator.userAgent &&
@@ -77,7 +80,7 @@
       //   ps.setColor(value);
       //   ps.init(true);
       // });
-    
+      
       (window.addEventListener
         ? window.addEventListener('click', function() {
           ps.init(true);
@@ -102,7 +105,7 @@
       : window.onload = initParticleSlider);
     
 
-        let open = document.querySelector('.navbar--icon');
+        let open = document.querySelector('.navbar--container');
         let menu = document.querySelector('.nav--open');
         let close = document.querySelector('.nav--open-icon');
         
